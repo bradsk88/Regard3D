@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Setup
+
+echo "Initializing installation workspace ... "
+rm -rf /tmp/regard3d-arch
+mkdir /tmp/regard3d-arch
+R3DSRC=$(pwd)
+$(cp -r $R3DSRC/src /tmp/regard3d-arch)
+cd /tmp/regard3d-arch
+echo "Done"
+
+echo "Ensuring Dependencies"
+pacaur -S cmake flann openscenegraph eigen3 opencv-git --noconfirm
+echo "Done"
+
+echo "Building Regard3D"
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Release" -DUSE_SSE2=TRUE ./src
+
+echo "Cleaning Up"
+rm -r /tmp/regard3d-arch
+
+
