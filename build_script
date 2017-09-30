@@ -11,7 +11,7 @@ cd /tmp/regard3d-arch
 echo "Done"
 
 echo "Ensuring Dependencies"
-pacaur -S cmake flann openscenegraph eigen3 opencv-git --noconfirm
+pacaur -S cmake flann openscenegraph eigen3 opencv-git ceres-solver assimp-git --noconfirm --needed
 echo "Done"
 
 echo "Building Regard3D"
