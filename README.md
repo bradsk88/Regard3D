@@ -1,6 +1,10 @@
-
-Regard3D
+Arch Linux build script for Regard3D
 ========
+
+Work in progress
+------------
+
+This project is currently in progress.  Once it's finished and tested, I'll be publishing it to the AUR.  Stay tuned.
 
 
 Introduction
