@@ -12,12 +12,29 @@ echo "Done"
 
 echo "Ensuring Dependencies"
 pacaur -S cmake flann openscenegraph eigen3 opencv-git ceres-solver assimp-git --noconfirm --needed
+
+echo "Building OpenMVG"
+# TODO: Fix openmvg-git in the AUR
+cd /tmp
+git clone --recursive https://github.com/openMVG/openMVG.git
+cd /tmp/openMVG
+mkdir -p openMVG_Build
+cd openMVG_Build
+mkdir -p /usr/local/bin/openMVG || exit $?
+cmake -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX:STRING="/usr/local/bin/openMVG" . ../src/
+make || exit $?
+make install || exit $?
 echo "Done"
 
+cd /tmp/regard3d-arch
+
 echo "Building Regard3D"
-cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Release" -DUSE_SSE2=TRUE ./src
 
-echo "Cleaning Up"
-rm -r /tmp/regard3d-arch
+sed -i -e 's/\-ffast-math //g' src/thirdparty/sqlite/CMakeLists.txt
+sed -i -e 's/\-ffast-math //g' src/CMakeLists.txt
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Release" -DUSE_SSE2=TRUE -DOpenMVG_DIR=/usr/local/bin/openMVG/share/openMVG/cmake -DOpenMVG_SRC_DIR=/tmp/openMVG/src ./src || exit $?
+make || exit $?
+make install || exit $?
 
+echo "All finished.  Run cleanup_script to clean up"
 
