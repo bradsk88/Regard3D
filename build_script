@@ -18,10 +18,11 @@ echo "Building OpenMVG"
 cd /tmp
 git clone --recursive https://github.com/openMVG/openMVG.git
 cd /tmp/openMVG
+git checkout tags/v1.2
 mkdir -p openMVG_Build
 cd openMVG_Build
-mkdir -p /usr/local/bin/openMVG || exit $?
-cmake -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX:STRING="/usr/local/bin/openMVG" . ../src/
+OMVG=$(pwd)
+cmake -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX:STRING="$OMVG/openMVG_install" . ../src/
 make || exit $?
 make install || exit $?
 echo "Done"
@@ -32,7 +33,9 @@ echo "Building Regard3D"
 
 sed -i -e 's/\-ffast-math //g' src/thirdparty/sqlite/CMakeLists.txt
 sed -i -e 's/\-ffast-math //g' src/CMakeLists.txt
-cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Release" -DUSE_SSE2=TRUE -DOpenMVG_DIR=/usr/local/bin/openMVG/share/openMVG/cmake -DOpenMVG_SRC_DIR=/tmp/openMVG/src ./src || exit $?
+mkdir -p build || exit $?
+cd ./build
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE="Release" -DUSE_SSE2=TRUE -DOpenMVG_DIR=$OMVG/openMVG_install/share/openMVG/cmake . ../src || exit $?
 make || exit $?
 make install || exit $?
 
