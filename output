@@ -1,0 +1,45 @@
+/tmp/regard3d-arch/src/thirdparty/daisy/src/daisy.cpp: In member function ‘void daisy::compute_grid_points()’:
+/tmp/regard3d-arch/src/thirdparty/daisy/src/daisy.cpp:197:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+[  8%] Building CXX object thirdparty/daisy/CMakeFiles/daisy.dir/src/interaction.cpp.o
+[  9%] Building CXX object thirdparty/daisy/CMakeFiles/daisy.dir/src/progress_bar.cpp.o
+[ 11%] Building CXX object thirdparty/daisy/CMakeFiles/daisy.dir/src/general.cpp.o
+[ 12%] Linking CXX static library libdaisy.a
+[ 12%] Built target daisy
+Scanning dependencies of target AKAZE
+[ 14%] Building CXX object thirdparty/akaze/CMakeFiles/AKAZE.dir/lib/AKAZE.cpp.o
+[ 15%] Building CXX object thirdparty/akaze/CMakeFiles/AKAZE.dir/lib/fed.cpp.o
+[ 16%] Building CXX object thirdparty/akaze/CMakeFiles/AKAZE.dir/lib/nldiffusion_functions.cpp.o
+[ 18%] Building CXX object thirdparty/akaze/CMakeFiles/AKAZE.dir/lib/utils.cpp.o
+[ 19%] Linking CXX static library libAKAZE.a
+[ 19%] Built target AKAZE
+Scanning dependencies of target fast-akaze
+[ 21%] Building CXX object thirdparty/fast-akaze/CMakeFiles/fast-akaze.dir/akaze.cpp.o
+[ 22%] Building CXX object thirdparty/fast-akaze/CMakeFiles/fast-akaze.dir/AKAZEFeatures.cpp.o
+[ 23%] Building CXX object thirdparty/fast-akaze/CMakeFiles/fast-akaze.dir/fed.cpp.o
+[ 25%] Building CXX object thirdparty/fast-akaze/CMakeFiles/fast-akaze.dir/nldiffusion_functions.cpp.o
+[ 26%] Linking CXX static library libfast-akaze.a
+[ 26%] Built target fast-akaze
+Scanning dependencies of target liop
+[ 28%] Building C object thirdparty/liop/CMakeFiles/liop.dir/vl_liop.c.o
+[ 29%] Linking C static library libliop.a
+[ 29%] Built target liop
+Scanning dependencies of target tinyply
+[ 30%] Building CXX object thirdparty/tinyply/CMakeFiles/tinyply.dir/tinyply.cpp.o
+[ 32%] Linking CXX static library libtinyply.a
+[ 32%] Built target tinyply
+Scanning dependencies of target sqlite
+[ 33%] Building C object thirdparty/sqlite/CMakeFiles/sqlite.dir/sqlite3.c.o
+[ 35%] Linking C static library libsqlite.a
+[ 35%] Built target sqlite
+Scanning dependencies of target Regard3D
+[ 36%] Building CXX object CMakeFiles/Regard3D.dir/Regard3DApp.cpp.o
+[ 38%] Building CXX object CMakeFiles/Regard3D.dir/Regard3DMainFrame.cpp.o
+In file included from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:35:0:
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:29:10: fatal error: software/SfMViewer/document.h: No such file or directory
+ #include "software/SfMViewer/document.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/Regard3D.dir/build.make:87: CMakeFiles/Regard3D.dir/Regard3DMainFrame.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:74: CMakeFiles/Regard3D.dir/all] Error 2
+make: *** [Makefile:152: all] Error 2
+
