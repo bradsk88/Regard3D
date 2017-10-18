@@ -1,3 +1,226 @@
+Building Regard3D
+-- The C compiler identification is GNU 7.1.1
+-- The CXX compiler identification is GNU 7.1.1
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found wxWidgets: -pthread;;;-lwx_baseu_net-3.0;-lwx_gtk2u_gl-3.0;-lwx_gtk2u_aui-3.0;-lwx_gtk2u_adv-3.0;-lwx_gtk2u_core-3.0;-lwx_baseu-3.0 (found version "3.0.3") 
+-- Checking for module 'flann>=1.7.0'
+--   Found flann, version 1.8.4
+-- Found FLANN: /usr/lib/libflann_cpp_s.a (Required is at least version "1.7.0") 
+-- FLANN found (include: /usr/include, lib: optimized;/usr/lib/libflann_cpp_s.a;debug;/usr/lib/libflann_cpp_s.a)
+-- Found osgFX: /usr/lib/libosgFX.so  
+-- Found osgPresentation: /usr/lib/libosgPresentation.so  
+-- Found osgVolume: /usr/lib/libosgVolume.so  
+-- Found osgWidget: /usr/lib/libosgWidget.so  
+-- Found osgViewer: /usr/lib/libosgViewer.so  
+-- Found osgAnimation: /usr/lib/libosgAnimation.so  
+-- Found osgText: /usr/lib/libosgText.so  
+-- Found osgDB: /usr/lib/libosgDB.so  
+-- Found osgGA: /usr/lib/libosgGA.so  
+-- Found osgManipulator: /usr/lib/libosgManipulator.so  
+-- Found osgTerrain: /usr/lib/libosgTerrain.so  
+-- Found osgParticle: /usr/lib/libosgParticle.so  
+-- Found osgShadow: /usr/lib/libosgShadow.so  
+-- Found osgSim: /usr/lib/libosgSim.so  
+-- Found osgUtil: /usr/lib/libosgUtil.so  
+-- Found osg: /usr/lib/libosg.so  
+-- Found OpenThreads: /usr/lib/libOpenThreads.so  
+-- Found OpenSceneGraph: /usr/lib/libosgFX.so;/usr/lib/libosgPresentation.so;/usr/lib/libosgVolume.so;/usr/lib/libosgWidget.so;/usr/lib/libosgViewer.so;/usr/lib/libosgAnimation.so;/usr/lib/libosgText.so;/usr/lib/libosgDB.so;/usr/lib/libosgGA.so;/usr/lib/libosgManipulator.so;/usr/lib/libosgTerrain.so;/usr/lib/libosgParticle.so;/usr/lib/libosgShadow.so;/usr/lib/libosgSim.so;/usr/lib/libosgUtil.so;/usr/lib/libosg.so;/usr/lib/libOpenThreads.so (found suitable version "3.4.0", minimum required is "3.0.0") 
+-- Found OpenGL: /usr/lib/libGL.so  
+Found Eigen 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Boost version: 1.64.0
+-- Found the following Boost libraries:
+--   date_time
+--   thread
+--   system
+--   chrono
+--   serialization
+--   filesystem
+--   locale
+--   atomic
+Boost_LIBRARIES = /usr/lib/libboost_date_time.a;/usr/lib/libboost_thread.a;/usr/lib/libboost_system.a;/usr/lib/libboost_chrono.a;/usr/lib/libboost_serialization.a;/usr/lib/libboost_filesystem.a;/usr/lib/libboost_locale.a;/usr/lib/libboost_atomic.a
+-- Found OpenCV: /usr (found version "3.3.0") found components:  core flann imgproc features2d calib3d highgui imgcodecs videoio ml 
+-- Try OpenMP C flag = [-fopenmp]
+-- Performing Test OpenMP_FLAG_DETECTED
+-- Performing Test OpenMP_FLAG_DETECTED - Success
+CMake Warning (dev) at /usr/share/cmake-3.8/Modules/FindOpenMP.cmake:179 (if):
+  if given arguments:
+
+    "TRUE"
+
+  An argument named "TRUE" appears in a conditional statement.  Policy
+  CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+  "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.8/Modules/FindOpenMP.cmake:224 (_OPENMP_GET_SPEC_DATE)
+  CMakeLists.txt:224 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Try OpenMP CXX flag = [-fopenmp]
+-- Performing Test OpenMP_FLAG_DETECTED
+-- Performing Test OpenMP_FLAG_DETECTED - Success
+CMake Warning (dev) at /usr/share/cmake-3.8/Modules/FindOpenMP.cmake:179 (if):
+  if given arguments:
+
+    "TRUE"
+
+  An argument named "TRUE" appears in a conditional statement.  Policy
+  CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+  "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.8/Modules/FindOpenMP.cmake:266 (_OPENMP_GET_SPEC_DATE)
+  CMakeLists.txt:224 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OpenMP: -fopenmp  
+-- Check for Ceres
+-- Found installed version of Eigen: /usr/share/eigen3/cmake
+-- Found required Ceres dependency: Eigen version 3.3.3 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Found Ceres version: 1.13.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, C++11, OpenMP]
+-- Found Ceres: /usr/include;/usr/include/eigen3;/usr/include
+Property of ceres, before: /usr/lib/libglog.so;/usr/lib/libspqr.so;/usr/lib/libtbb.so;/usr/lib/libtbbmalloc.so;/usr/lib/libcholmod.so;/usr/lib/libccolamd.so;/usr/lib/libcamd.so;/usr/lib/libcolamd.so;/usr/lib/libamd.so;/usr/lib/liblapack.so;/usr/lib/libblas.so;/usr/lib/libblas.so;/usr/lib/libsuitesparseconfig.so;/usr/lib/librt.so;/usr/lib/libmetis.so;/usr/lib/libcxsparse.so;/usr/lib/liblapack.so;/usr/lib/libblas.so;/usr/lib/libblas.so;gomp;-lpthread
+Property of ceres, after: /usr/lib/libglog.so;/usr/lib/libtbb.so;/usr/lib/libtbbmalloc.so;/usr/lib/libcholmod.so;/usr/lib/libccolamd.so;/usr/lib/libcamd.so;/usr/lib/libcolamd.so;/usr/lib/libamd.so;/usr/lib/liblapack.so;/usr/lib/libblas.so;/usr/lib/libblas.so;/usr/lib/libsuitesparseconfig.so;/usr/lib/librt.so;/usr/lib/libmetis.so;/usr/lib/libcxsparse.so;/usr/lib/liblapack.so;/usr/lib/libblas.so;/usr/lib/libblas.so;gomp;-lpthread
+-- Looking for sgemm_
+-- Looking for sgemm_ - found
+-- Looking for cheev_
+-- Looking for cheev_ - found
+-- Found AMD library: /usr/lib/libamd.so
+-- Found AMD header in: /usr/include
+-- Found CAMD library: /usr/lib/libcamd.so
+-- Found CAMD header in: /usr/include
+-- Found COLAMD library: /usr/lib/libcolamd.so
+-- Found COLAMD header in: /usr/include
+-- Found CCOLAMD library: /usr/lib/libccolamd.so
+-- Found CCOLAMD header in: /usr/include
+-- Found CHOLMOD library: /usr/lib/libcholmod.so
+-- Found CHOLMOD header in: /usr/include
+-- Found SuiteSparseQR library: /usr/lib/libspqr.so
+-- Found SuiteSparseQR header in: /usr/include
+-- Found Intel Thread Building Blocks (TBB) library: /usr/lib/libtbb.so, assuming SuiteSparseQR was compiled with TBB.
+-- Found Intel Thread Building Blocks (TBB) Malloc library: /usr/lib/libtbbmalloc.so
+-- Found SuiteSparse_config library: /usr/lib/libsuitesparseconfig.so
+-- Found SuiteSparse_config header in: /usr/include
+-- Adding librt: /usr/lib/librt.so to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+-- Found METIS library: /usr/lib/libmetis.so.
+-- Found SuiteSparse: TRUE (found version "4.5.4") 
+-- Checking for module 'assimp'
+--   Found assimp, version 4.0.1
+AssiMP: assimp /usr/include/assimp  
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- ----
+-- OpenMVG Find_Package
+-- ----
+-- Found OpenMVG version: 1.2.0
+-- Installed in: /tmp/openMVG/openMVG_Build/openMVG_install
+-- Used OpenMVG libraries: openMVG_image;openMVG_features;openMVG_geometry;openMVG_matching;openMVG_matching_image_collection;openMVG_kvld;openMVG_multiview;openMVG_lInftyComputerVision;openMVG_system;openMVG_sfm
+-- Required CFLAGS: -DOPENMVG_USE_OPENMP
+-- ----
+OPENMVG_LIBRARIES: openMVG_image;openMVG_features;openMVG_geometry;openMVG_matching;openMVG_matching_image_collection;openMVG_kvld;openMVG_multiview;openMVG_lInftyComputerVision;openMVG_system;openMVG_sfm
+OPENMVG_INCLUDE_DIRS: /tmp/openMVG/openMVG_Build/openMVG_install/include;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG_dependencies;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG_dependencies/cereal/include;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/third_party/lemon;/tmp/openMVG/openMVG_Build/openMVG/third_party/lemon;/usr/include/eigen3;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/third_party/flann/src/cpp;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG
+OPENMVG_INCLUDE_DIRS: /tmp/openMVG/openMVG_Build/openMVG_install/include;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG_dependencies;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG_dependencies/cereal/include;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/third_party/lemon;/tmp/openMVG/openMVG_Build/openMVG/third_party/lemon;/usr/include/eigen3;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/third_party/flann/src/cpp;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG;/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/third_party
+-- Could NOT find VLFEAT (missing:  VLFEAT_LIBRARY VLFEAT_INCLUDE_DIR) 
+CMake Warning (dev) at /usr/share/cmake-3.8/Modules/FindOpenMP.cmake:179 (if):
+  if given arguments:
+
+    "TRUE"
+
+  An argument named "TRUE" appears in a conditional statement.  Policy
+  CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+  "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.8/Modules/FindOpenMP.cmake:224 (_OPENMP_GET_SPEC_DATE)
+  thirdparty/kgraph/CMakeLists.txt:22 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/cmake-3.8/Modules/FindOpenMP.cmake:179 (if):
+  if given arguments:
+
+    "TRUE"
+
+  An argument named "TRUE" appears in a conditional statement.  Policy
+  CMP0012 is not set: if() recognizes numbers and boolean constants.  Run
+  "cmake --help-policy CMP0012" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.8/Modules/FindOpenMP.cmake:266 (_OPENMP_GET_SPEC_DATE)
+  thirdparty/kgraph/CMakeLists.txt:22 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    USE_SSE2
+
+
+-- Build files have been written to: /tmp/regard3d-arch/build
+Scanning dependencies of target kgraph
+[  1%] Building CXX object thirdparty/kgraph/CMakeFiles/kgraph.dir/kgraph.cpp.o
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp: In function ‘void kgraph::GenerateControl(const kgraph::IndexOracle&, unsigned int, unsigned int, std::vector<kgraph::Control>*)’:
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp:267:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i = 0; i < C; ++i) {
+                             ~~^~~
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp: In member function ‘virtual void kgraph::KGraphImpl::reverse(int)’:
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp:691:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < graph.size(); ++i) {
+                                 ~~^~~~~~~~~~~~~~
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp: In member function ‘void kgraph::KGraphConstructor::init()’:
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp:776:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int n = 0; n < N; ++n) {
+                                 ~~^~~
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp:785:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                         if (random[i] == n) ++i;
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp: In member function ‘void kgraph::KGraphConstructor::join()’:
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp:798:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int n = 0; n < oracle.size(); ++n) {
+                             ~~^~~~~~~~~~~~~~~
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp: In member function ‘void kgraph::KGraphConstructor::update()’:
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp:825:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int n = 0; n < N; ++n) {
+                             ~~^~~
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph.cpp:841:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int n = 0; n < N; ++n) {
+                             ~~^~~
+[  2%] Building CXX object thirdparty/kgraph/CMakeFiles/kgraph.dir/metric.cpp.o
+In file included from /tmp/regard3d-arch/src/thirdparty/kgraph/metric.cpp:2:0:
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph-data.h: In member function ‘void kgraph::Matrix<T, A>::reset(unsigned int, unsigned int)’:
+/tmp/regard3d-arch/src/thirdparty/kgraph/kgraph-data.h:109:28: warning: there are no arguments to ‘memalign’ that depend on a template parameter, so a declaration of ‘memalign’ must be available [-fpermissive]
+             data = (char *)memalign(A, row * stride); // SSE instruction needs data to be aligned
+                            ^~~~~~~~
+[  4%] Linking CXX static library libkgraph.a
+[  4%] Built target kgraph
+Scanning dependencies of target daisy
+[  5%] Building CXX object thirdparty/daisy/CMakeFiles/daisy.dir/src/corecv.cpp.o
+[  7%] Building CXX object thirdparty/daisy/CMakeFiles/daisy.dir/src/daisy.cpp.o
+/tmp/regard3d-arch/src/thirdparty/daisy/src/daisy.cpp: In function ‘void kutility::display(T**, int, int, bool, bool, int, int, char*) [with T = double]’:
+/tmp/regard3d-arch/src/thirdparty/daisy/src/daisy.cpp:197:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+       display( m_grid_points, m_grid_point_number, 2 );
+                                                      ^
 /tmp/regard3d-arch/src/thirdparty/daisy/src/daisy.cpp: In member function ‘void daisy::compute_grid_points()’:
 /tmp/regard3d-arch/src/thirdparty/daisy/src/daisy.cpp:197:54: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
 [  8%] Building CXX object thirdparty/daisy/CMakeFiles/daisy.dir/src/interaction.cpp.o
@@ -35,10 +258,219 @@ Scanning dependencies of target Regard3D
 [ 36%] Building CXX object CMakeFiles/Regard3D.dir/Regard3DApp.cpp.o
 [ 38%] Building CXX object CMakeFiles/Regard3D.dir/Regard3DMainFrame.cpp.o
 In file included from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:35:0:
-/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:29:10: fatal error: software/SfMViewer/document.h: No such file or directory
- #include "software/SfMViewer/document.h"
-          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                         ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 1 is invalid
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                          ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                         ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 1 is invalid
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                          ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                         ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 1 is invalid
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                          ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                         ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 1 is invalid
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                          ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                         ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:57: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 1 is invalid
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                          ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:74: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:36: error: invalid use of template-name ‘std::vector’ without an argument list
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                    ^~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:36: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7.1.1/vector:64:0,
+                 from /tmp/regard3d-arch/src/CommonIncludes.h:18,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:23:
+/usr/include/c++/7.1.1/bits/stl_vector.h:216:11: note: ‘template<class _Tp, class _Alloc> class std::vector’ declared here
+     class vector : protected _Vector_base<_Tp, _Alloc>
+           ^~~~~~
+In file included from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:35:0:
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:37:47: error: expected ‘,’ or ‘...’ before ‘<’ token
+  static void exportKeypoints(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                               ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                       ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 1 is invalid
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                        ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                       ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 1 is invalid
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                        ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                       ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 1 is invalid
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                        ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                       ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 1 is invalid
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                        ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                       ^~~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:55: error: ‘SfMIO’ is not a member of ‘openMVG’
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 1 is invalid
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                                                        ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:72: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:34: error: invalid use of template-name ‘std::vector’ without an argument list
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                  ^~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:34: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7.1.1/vector:64:0,
+                 from /tmp/regard3d-arch/src/CommonIncludes.h:18,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:23:
+/usr/include/c++/7.1.1/bits/stl_vector.h:216:11: note: ‘template<class _Tp, class _Alloc> class std::vector’ declared here
+     class vector : protected _Vector_base<_Tp, _Alloc>
+           ^~~~~~
+In file included from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:35:0:
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:41:45: error: expected ‘,’ or ‘...’ before ‘<’ token
+  static void exportMatches(const std::vector<openMVG::SfMIO::CameraInfo> &vec_camImageName,
+                                             ^
+In file included from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:35:0:
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:71:81: error: ‘Vec3’ was not declared in this scope
+  static void ColorizeTracks(const openMVG::sfm::SfM_Data &sfm_data, std::vector<Vec3> &vec_3dPoints, std::vector<Vec3> &vec_tracksColor);
+                                                                                 ^~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:71:81: note: suggested alternatives:
+In file included from /usr/include/osg/Vec4ub:17:0,
+                 from /usr/include/osg/Array:30,
+                 from /usr/include/osg/Uniform:23,
+                 from /usr/include/osg/StateSet:20,
+                 from /usr/include/osg/Node:19,
+                 from /usr/include/osg/NodeVisitor:17,
+                 from /usr/include/osgGA/EventVisitor:17,
+                 from /usr/include/osgViewer/Viewer:18,
+                 from /tmp/regard3d-arch/src/gl/GraphicsWindowWX.h:24,
+                 from /tmp/regard3d-arch/src/gl/OSGGLCanvas.h:25,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrameBase.h:29,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.h:43,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:25:
+/usr/include/osg/Vec3:21:19: note:   ‘osg::Vec3’
+     typedef Vec3f Vec3;
+                   ^~~~
+In file included from /tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/features/feature.hpp:19:0,
+                 from /tmp/regard3d-arch/src/Regard3DFeatures.h:26,
+                 from /tmp/regard3d-arch/src/R3DComputeMatches.h:25,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:30:
+/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/numeric/eigen_alias_definition.hpp:64:31: note:   ‘openMVG::Vec3’
+   using Vec3 = Eigen::Vector3d;
+                               ^
+In file included from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:35:0:
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:71:85: error: template argument 1 is invalid
+  static void ColorizeTracks(const openMVG::sfm::SfM_Data &sfm_data, std::vector<Vec3> &vec_3dPoints, std::vector<Vec3> &vec_tracksColor);
+                                                                                     ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:71:85: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:71:114: error: ‘Vec3’ was not declared in this scope
+ eTracks(const openMVG::sfm::SfM_Data &sfm_data, std::vector<Vec3> &vec_3dPoints, std::vector<Vec3> &vec_tracksColor);
+                                                                                              ^~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:71:114: note: suggested alternatives:
+In file included from /usr/include/osg/Vec4ub:17:0,
+                 from /usr/include/osg/Array:30,
+                 from /usr/include/osg/Uniform:23,
+                 from /usr/include/osg/StateSet:20,
+                 from /usr/include/osg/Node:19,
+                 from /usr/include/osg/NodeVisitor:17,
+                 from /usr/include/osgGA/EventVisitor:17,
+                 from /usr/include/osgViewer/Viewer:18,
+                 from /tmp/regard3d-arch/src/gl/GraphicsWindowWX.h:24,
+                 from /tmp/regard3d-arch/src/gl/OSGGLCanvas.h:25,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrameBase.h:29,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.h:43,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:25:
+/usr/include/osg/Vec3:21:19: note:   ‘osg::Vec3’
+     typedef Vec3f Vec3;
+                   ^~~~
+In file included from /tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/features/feature.hpp:19:0,
+                 from /tmp/regard3d-arch/src/Regard3DFeatures.h:26,
+                 from /tmp/regard3d-arch/src/R3DComputeMatches.h:25,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:30:
+/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/numeric/eigen_alias_definition.hpp:64:31: note:   ‘openMVG::Vec3’
+   using Vec3 = Eigen::Vector3d;
+                               ^
+In file included from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:35:0:
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:71:118: error: template argument 1 is invalid
+ cks(const openMVG::sfm::SfM_Data &sfm_data, std::vector<Vec3> &vec_3dPoints, std::vector<Vec3> &vec_tracksColor);
+                                                                                              ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:71:118: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:72:85: error: ‘Vec3’ was not declared in this scope
+  static void GetCameraPositions(const openMVG::sfm::SfM_Data &sfm_data, std::vector<Vec3> &vec_camPosition);
+                                                                                     ^~~~
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:72:85: note: suggested alternatives:
+In file included from /usr/include/osg/Vec4ub:17:0,
+                 from /usr/include/osg/Array:30,
+                 from /usr/include/osg/Uniform:23,
+                 from /usr/include/osg/StateSet:20,
+                 from /usr/include/osg/Node:19,
+                 from /usr/include/osg/NodeVisitor:17,
+                 from /usr/include/osgGA/EventVisitor:17,
+                 from /usr/include/osgViewer/Viewer:18,
+                 from /tmp/regard3d-arch/src/gl/GraphicsWindowWX.h:24,
+                 from /tmp/regard3d-arch/src/gl/OSGGLCanvas.h:25,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrameBase.h:29,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.h:43,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:25:
+/usr/include/osg/Vec3:21:19: note:   ‘osg::Vec3’
+     typedef Vec3f Vec3;
+                   ^~~~
+In file included from /tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/features/feature.hpp:19:0,
+                 from /tmp/regard3d-arch/src/Regard3DFeatures.h:26,
+                 from /tmp/regard3d-arch/src/R3DComputeMatches.h:25,
+                 from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:30:
+/tmp/openMVG/openMVG_Build/openMVG_install/include/openMVG/numeric/eigen_alias_definition.hpp:64:31: note:   ‘openMVG::Vec3’
+   using Vec3 = Eigen::Vector3d;
+                               ^
+In file included from /tmp/regard3d-arch/src/Regard3DMainFrame.cpp:35:0:
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:72:89: error: template argument 1 is invalid
+  static void GetCameraPositions(const openMVG::sfm::SfM_Data &sfm_data, std::vector<Vec3> &vec_camPosition);
+                                                                                         ^
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:72:89: error: template argument 2 is invalid
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:89:39: error: ‘Document’ does not name a type; did you mean ‘XSegment’?
+  static bool exportToPMVSFormat(const Document & doc,
+                                       ^~~~~~~~
+                                       XSegment
+/tmp/regard3d-arch/src/utils/OpenMVGHelper.h:94:42: error: ‘Document’ does not name a type; did you mean ‘XSegment’?
+  static bool exportToBundlerFormat(const Document & doc,
+                                          ^~~~~~~~
+                                          XSegment
 make[2]: *** [CMakeFiles/Regard3D.dir/build.make:87: CMakeFiles/Regard3D.dir/Regard3DMainFrame.cpp.o] Error 1
 make[1]: *** [CMakeFiles/Makefile2:74: CMakeFiles/Regard3D.dir/all] Error 2
 make: *** [Makefile:152: all] Error 2

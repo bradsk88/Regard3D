@@ -26,7 +26,7 @@
 
 // OpenMVG
 //#include "software/SfM/SfMIOHelper.hpp"
-#include "software/SfMViewer/document.h"
+//#include "software/SfMViewer/document.h"
 #if !defined(R3D_USE_OPENMVG_PRE08)
 #include "openMVG/sfm/sfm_data.hpp"
 #endif
